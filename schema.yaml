@@ -1,6 +1,6 @@
-title: "Terraform OCI Container Engine for Kubernetes (aka OCI OKE) with OCI LoadBalancer"
-description: "FoggyKitchen.com - Terraform OCI Container Engine for Kubernetes (aka OCI OKE) with OCI LoadBalancer."
-stackDescription: "FoggyKitchen.com - Terraform OCI Container Engine for Kubernetes (aka OCI OKE) with OCI LoadBalancer."
+title: "Terraform OCI Container Engine for Kubernetes (aka OCI OKE) with image deployed from OCIR"
+description: "FoggyKitchen.com - Terraform OCI Container Engine for Kubernetes (aka OCI OKE) with image deployed from OCIR."
+stackDescription: "FoggyKitchen.com - Terraform OCI Container Engine for Kubernetes (aka OCI OKE) with image deployed from OCIR."
 schemaVersion: 1.1.0
 version: "20201028"
 locale: "en"
@@ -51,6 +51,7 @@ variableGroups:
   - flex_lb_max_shape
   - lb_listener_port
   - lb_nsg
+  - number_of_nginx_replicas
 
 variables:
 
