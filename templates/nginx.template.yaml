@@ -23,3 +23,5 @@ spec:
             memory: "500Mi"
       imagePullSecrets:
       - name: ocirsecret
+      ${ is_arm_node_shape ? "nodeSelector:" : "" }
+        ${ is_arm_node_shape ? "kubernetes.io/arch: arm64" : "" }
