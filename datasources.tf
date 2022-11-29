@@ -52,6 +52,7 @@ data "template_file" "nginx_deployment" {
   vars     = {
       number_of_nginx_replicas = var.number_of_nginx_replicas
       image_url                = "${local.ocir_docker_repository}/${local.ocir_namespace}/${var.ocir_repo_name}/fknginx:latest" 
+      is_arm_node_shape        = local.is_arm_node_shape
   }
 }
 
